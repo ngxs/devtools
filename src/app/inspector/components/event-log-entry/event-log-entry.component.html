@@ -1,0 +1,15 @@
+<div class="icon"><i class="material-icons">
+  {{ getIcon() }}
+</i></div>
+<div class="time">{{ logEntry.time | date: 'HH:ss.SSS' }}</div>
+<div class="type">{{ logEntry.type }}</div>
+
+<div class="meta-info-name">
+  <span *ngIf="isActionType()">{{ logEntry.actionType }}</span>
+  <span *ngIf="isHttpResponseType()">
+   {{ logEntry.method }} {{ logEntry.url }}  <small>({{ logEntry.responseTimeMs }}ms, {{ logEntry.responseSizeKb }}KB)</small>
+  </span>
+</div>
+<nav class="actions">
+  <button class="inspect" (click)="inspect()">Inspect</button>
+</nav>

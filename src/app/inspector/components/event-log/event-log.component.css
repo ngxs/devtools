@@ -1,0 +1,28 @@
+:host {
+  --border-color: #3a3c56;
+}
+
+h2 {
+  padding: 0 10px;
+  font-weight: normal;
+}
+
+header {
+  display: grid;
+  border-bottom: 1px var(--border-color) solid;
+  grid-template-columns: 30% auto;
+}
+
+header .actions {
+  text-align: right;
+  color: #65687e;
+  text-transform: uppercase;
+  padding-top: 14px;
+  font-size: 13px;
+}
+
+header .actions .recording .material-icons {
+  color: #8c1010;
+  font-size: 14px;
+  padding-top: 2px;
+}

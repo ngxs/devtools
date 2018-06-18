@@ -1,0 +1,23 @@
+:host {
+  width: 100%;
+  display: block;
+  display: grid;
+  grid-template-columns: 60% 4px auto;
+  grid-template-rows: 100%;
+  grid-column-gap: 10px
+}
+
+.gutter {
+  width: 4px;
+  cursor: col-resize;
+  user-select: none;
+}
+
+.gutter-inner {
+  cursor: col-resize;
+  user-select: none;
+  width: 1px;
+  background: #3a3c56;
+  margin-left: 1px;
+  height: 100%;
+}

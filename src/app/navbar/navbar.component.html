@@ -1,0 +1,8 @@
+<ul [@listAnimation]="links.length">
+  <li class="ngxs-version">
+    <strong>NGXS 3.0.1</strong> detected!
+  </li>
+  <li *ngFor="let link of links" routerLinkActive="active">
+    <a [routerLink]="link.path">{{ link.label }}</a>
+  </li>
+</ul>
