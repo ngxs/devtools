@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  background: #31334a;
+  padding: 8px;
+  color: #848593;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 10px;
+}
+
+li.ngxs-version {
+  padding: 5px 15px 5px 0;
+  color: #848593;
+  border-right: 1px #53556d solid;
+  margin-right: 15px;
+}
+
+li.ngxs-version strong {
+  color: #d6d7e4;
+}
+
+a {
+  color: inherit;
+  padding: 5px 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+li.active a {
+  color: #fff;
+}
+
+li.active {
+  background: #5865e7;
+  border-radius: 4px;
+}

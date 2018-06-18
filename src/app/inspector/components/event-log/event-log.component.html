@@ -1,0 +1,14 @@
+<div [@listAnimation]="(logEntries$ | async).length">
+  <header>
+    <h2>Event Log</h2>
+    <div class="actions">
+      <div class="recording">
+          <i class="material-icons">
+              fiber_manual_record
+              </i> Recording
+      </div>
+    </div>
+  </header>
+  <ngxs-event-log-entry *ngFor="let logEntry of logEntries$ | async" [logEntry]="logEntry">
+  </ngxs-event-log-entry>
+</div>

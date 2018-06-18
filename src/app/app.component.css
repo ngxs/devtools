@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.router-content {
+  padding: 0 5px 0 5px;
+  height: 100%;
+}

@@ -1,0 +1,50 @@
+:host {
+  display: grid;
+  grid-template-columns: auto auto 90px 1fr 1fr;
+  grid-gap: 15px;
+  padding: 10px;
+  border-bottom: 1px var(--border-color) solid;
+  transition: background-color 0.3s ease;
+}
+
+:host:hover {
+  background-color: #31334a;
+  cursor: pointer;
+}
+
+.type {
+  color: #5865e7;
+}
+
+.time, small {
+  color: #65677a;
+  font-size: inherit;
+}
+
+.icon .material-icons {
+  font-size: 20px;
+}
+
+
+:host .actions {
+  visibility: hidden;
+  text-align: right;
+}
+
+button {
+  background: #5865e7;
+  border: 0;
+  padding: 5px;
+  color: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  outline: 0;
+}
+
+:host:hover .actions {
+  visibility: visible;
+}

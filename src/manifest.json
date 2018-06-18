@@ -1,0 +1,8 @@
+{
+  "name": "NGXS",
+  "version": "1.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "66.0",
+  "devtools_page": "devtools.html",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
