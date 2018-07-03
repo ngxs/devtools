@@ -16,5 +16,5 @@ NGXS Devtools is based on a simple Angular CLI project. The devtools use NGXS fo
 
 ## Development
 
-* `yarn start` runs development mode - Builds the CLI project in watch mode and copies all other assets.
-* `yarn build` builds the project as a Chrome devtools extension (TODO)
+* `yarn start:chrome` runs development mode - Builds the CLI project in watch mode and copies all other assets.
+* `yarn build:chrome` builds the project as a Chrome devtools extension (TODO)
