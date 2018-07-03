@@ -14,10 +14,7 @@ import {
   stagger
 } from '@angular/animations';
 import { Store, Select } from '@ngxs/store';
-import {
-  InspectorStateModel,
-  STATE_NAME
-} from '../../state/inspector.state';
+import { InspectorStateModel, STATE_NAME } from '../../state/inspector.state';
 import {
   LogEntry,
   ActionLogEntry,
