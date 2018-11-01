@@ -2,7 +2,12 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": ["chrome"]
+    "types": [
+      "chrome"
+    ]
   },
-  "exclude": ["src/test.ts", "**/*.spec.ts"]
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
 }
