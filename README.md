@@ -1,5 +1,7 @@
 # NGXS Devtools
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngxs/devtools.svg)](https://greenkeeper.io/)
+
 <p align="center">
   <img src="docs/assets/logo.png">
   <br />
