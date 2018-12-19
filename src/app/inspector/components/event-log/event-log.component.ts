@@ -1,18 +1,6 @@
-import {
-  Component,
-  OnInit,
-  ChangeDetectionStrategy,
-  OnDestroy
-} from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, OnDestroy } from '@angular/core';
 
-import {
-  transition,
-  animate,
-  style,
-  trigger,
-  query,
-  stagger
-} from '@angular/animations';
+import { transition, animate, style, trigger, query, stagger } from '@angular/animations';
 import { Store, Select } from '@ngxs/store';
 import { InspectorStateModel, STATE_NAME } from '../../state/inspector.state';
 import {
@@ -32,11 +20,9 @@ import { AddEventLogEntry } from '../../state/actions/event-log.actions';
   animations: [
     trigger('listAnimation', [
       transition('* => *', [
-        query(
-          ':enter',
-          style({ transform: 'translateY(-30px)', opacity: 0, height: 0 }),
-          { optional: true }
-        ),
+        query(':enter', style({ transform: 'translateY(-30px)', opacity: 0, height: 0 }), {
+          optional: true
+        }),
         query(
           ':enter',
           stagger('150ms', [
@@ -57,9 +43,7 @@ import { AddEventLogEntry } from '../../state/actions/event-log.actions';
   ]
 })
 export class EventLogComponent implements OnDestroy {
-  @Select(
-    (state: { [STATE_NAME]: InspectorStateModel }) => state.inspector.logEntries
-  )
+  @Select((state: { [STATE_NAME]: InspectorStateModel }) => state.inspector.logEntries)
   readonly logEntries$: Observable<LogEntry[]>;
 
   private interval: number;

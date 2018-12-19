@@ -11,9 +11,6 @@ import { LogEntry } from '../../models/event-log.model';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EventLogEntryDetailsComponent {
-  @Select(
-    (state: { [STATE_NAME]: InspectorStateModel }) =>
-      state.inspector.inspectedLogEntry
-  )
+  @Select((state: { [STATE_NAME]: InspectorStateModel }) => state.inspector.inspectedLogEntry)
   readonly logEntry$: Observable<LogEntry>;
 }

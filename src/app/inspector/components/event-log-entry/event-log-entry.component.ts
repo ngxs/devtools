@@ -1,9 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ChangeDetectionStrategy,
-  Input
-} from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 import { LogEntry, LogEntryType } from '../../models/event-log.model';
 import { Observable } from 'rxjs';
 import { Store } from '@ngxs/store';

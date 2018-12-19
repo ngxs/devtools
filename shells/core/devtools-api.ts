@@ -51,14 +51,14 @@ export abstract class BaseDevtoolsAPI {
   private _setupInitListener() {
     fromEvent(this._window, 'message')
       .pipe(
-        filter<MessageEvent>(event => this._isRelavantMessage(event)),
+        filter<MessageEvent>(event => this._isRelevantMessage(event)),
         filter(event => event.data.messageType === 'ngxs-devtools-init'),
         first()
       )
       .subscribe(() => this._onInit());
   }
 
-  private _isRelavantMessage(event: MessageEvent): boolean {
+  private _isRelevantMessage(event: MessageEvent): boolean {
     return (
       this._messageDataIsObject(event) &&
       event.target === window &&

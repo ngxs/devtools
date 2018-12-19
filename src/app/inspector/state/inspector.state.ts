@@ -29,10 +29,7 @@ export const STATE_NAME = 'inspector';
 })
 export class InspectorState {
   @Action(AddEventLogEntry)
-  addEventLogEntry(
-    ctx: StateContext<InspectorStateModel>,
-    action: AddEventLogEntry
-  ) {
+  addEventLogEntry(ctx: StateContext<InspectorStateModel>, action: AddEventLogEntry) {
     const state = ctx.getState();
     if (!state.recording) {
       return;
@@ -43,26 +40,17 @@ export class InspectorState {
   }
 
   @Action(StartRecording)
-  startRecording(
-    ctx: StateContext<InspectorStateModel>,
-    action: StartRecording
-  ) {
+  startRecording(ctx: StateContext<InspectorStateModel>, action: StartRecording) {
     ctx.patchState({ recording: true });
   }
 
   @Action(SetInspectedLogEntry)
-  setInspectedLogEntry(
-    ctx: StateContext<InspectorStateModel>,
-    action: SetInspectedLogEntry
-  ) {
+  setInspectedLogEntry(ctx: StateContext<InspectorStateModel>, action: SetInspectedLogEntry) {
     ctx.patchState({ inspectedLogEntry: action.payload });
   }
 
   @Action(PauseRecording)
-  pauseRecording(
-    ctx: StateContext<InspectorStateModel>,
-    action: StartRecording
-  ) {
+  pauseRecording(ctx: StateContext<InspectorStateModel>, action: StartRecording) {
     ctx.patchState({ recording: false });
   }
 }

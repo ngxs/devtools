@@ -10,11 +10,7 @@ import { InspectorState } from './state/inspector.state';
 import { EventLogEntryDetailsComponent } from './components/event-log-entry-details/event-log-entry-details.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    InspectorRoutingModule,
-    NgxsModule.forFeature([InspectorState])
-  ],
+  imports: [CommonModule, InspectorRoutingModule, NgxsModule.forFeature([InspectorState])],
   declarations: [
     EventLogEntryComponent,
     EventLogComponent,

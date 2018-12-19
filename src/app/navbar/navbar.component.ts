@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  transition,
-  animate,
-  style,
-  trigger,
-  query,
-  stagger
-} from '@angular/animations';
+import { transition, animate, style, trigger, query, stagger } from '@angular/animations';
 
 @Component({
   selector: 'ngxs-navbar',
@@ -15,11 +8,9 @@ import {
   animations: [
     trigger('listAnimation', [
       transition('* => *', [
-        query(
-          ':enter',
-          style({ transform: 'translateY(-100px)', opacity: 0 }),
-          { optional: true }
-        ),
+        query(':enter', style({ transform: 'translateY(-100px)', opacity: 0 }), {
+          optional: true
+        }),
         query(
           ':enter',
           stagger('150ms', [
