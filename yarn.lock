@@ -457,17 +457,17 @@
     tree-kill "1.2.1"
     webpack-sources "1.3.0"
 
-"@ngxs/logger-plugin@3.3.3":
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@ngxs/logger-plugin/-/logger-plugin-3.3.3.tgz#261a9e1732032ebf7c1fc6739a54a19d4a82a5db"
-  integrity sha512-PgS+h2rXxjP+T5GaxGpSbkGwyYRFgZ1TC5YkyRlulo3kUeyPQQEXOCEm+FJgpcdB92Zt3Ob7/362sucYSpUpTg==
+"@ngxs/logger-plugin@3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@ngxs/logger-plugin/-/logger-plugin-3.4.3.tgz#1b001c563ddc5879a9d523f1b3c456dbdd6996ac"
+  integrity sha512-csPen2ckapQifklrQfdKhDoklM2CNAY7nWWRWxeR/a/DZxMwaESt4HSkt3oab13dQ5kad4AP7mJCuPn51mAsPA==
   dependencies:
     tslib "^1.9.0"
 
-"@ngxs/store@3.3.3":
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.3.3.tgz#2fc269819a5ec007b105994ae6b5b876c93a715f"
-  integrity sha512-w2FFFF5C4DwqVTWFewe1XxHdMgG+a+VL2+Y5BTruM+lQVS3j3gk3pZgH5WqCIRVM61oQog02QxG/vLW9urXOOQ==
+"@ngxs/store@3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.4.3.tgz#cf2f3b95e6be814742754c7f24e53b2b6392bb47"
+  integrity sha512-pVwxFxCxr09+zL37ot1hf6EhgpftNLSAseBZwHUlx40x2qAT+jat8XJlj4j0p+BoVEjlaVZn8zE6qMm2oSPlZw==
   dependencies:
     tslib "^1.9.0"
 
