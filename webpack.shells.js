@@ -7,9 +7,9 @@ const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: {
-    'background': path.resolve(__dirname, 'shells/chrome/background.ts'),
+    background: path.resolve(__dirname, 'shells/chrome/background.ts'),
     'inject-devtools-api': path.resolve(__dirname, 'shells/chrome/inject-devtools-api.ts'),
-    'devtools': path.resolve(__dirname, 'shells/chrome/devtools.ts'),
+    devtools: path.resolve(__dirname, 'shells/chrome/devtools.ts'),
     'devtools-api-script': path.resolve(__dirname, 'shells/chrome/devtools-api-script.ts')
   },
   output: {
@@ -22,19 +22,22 @@ module.exports = {
     minimize: false
   },
   plugins: [
-    new CleanWebpackPlugin(
-      [path.resolve(__dirname, 'dist/shells')],
-      {
-        verbose: true
-      }
-    ),
-    isProd ? new FileManagerPlugin({
-      onEnd: {
-        copy: [
-          {source: path.resolve(__dirname, 'dist/devtools'), destination: 'shells/chrome/devtools'}
-        ]
-      }
-    }) : () => {},
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, 'dist/shells')],
+      verbose: true
+    }),
+    isProd
+      ? new FileManagerPlugin({
+          onEnd: {
+            copy: [
+              {
+                source: path.resolve(__dirname, 'dist/devtools'),
+                destination: 'shells/chrome/devtools'
+              }
+            ]
+          }
+        })
+      : () => {},
     new CopyWebpackPlugin([
       {
         from: 'shells/**/*',
@@ -44,7 +47,7 @@ module.exports = {
     ])
   ],
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js', '.json']
   },
   module: {
     rules: [
