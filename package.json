@@ -42,7 +42,7 @@
     "@types/jasminewd2": "~2.0.6",
     "@types/node": "~11.13.5",
     "chokidar": "^2.1.5",
-    "clean-webpack-plugin": "^2.0.1",
+    "clean-webpack-plugin": "^2.0.2",
     "codelyzer": "~5.0.1",
     "concurrently": "^4.1.0",
     "copy": "^0.3.2",
