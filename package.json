@@ -37,7 +37,7 @@
     "@angular/language-service": "~7.2.15",
     "@commitlint/cli": "^7.6.1",
     "@commitlint/config-conventional": "^7.6.0",
-    "@types/chrome": "~0.0.83",
+    "@types/chrome": "~0.0.84",
     "@types/jasmine": "~3.3.12",
     "@types/jasminewd2": "~2.0.6",
     "@types/node": "~11.13.5",
