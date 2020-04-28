@@ -43,7 +43,7 @@
     "@types/node": "~11.13.5",
     "chokidar": "^2.1.6",
     "clean-webpack-plugin": "^2.0.2",
-    "codelyzer": "~5.1.0",
+    "codelyzer": "~5.2.2",
     "concurrently": "^4.1.0",
     "copy": "^0.3.2",
     "copy-webpack-plugin": "^5.0.3",
