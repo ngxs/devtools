@@ -39,7 +39,7 @@
     "@commitlint/config-conventional": "^7.6.0",
     "@types/chrome": "~0.0.85",
     "@types/jasmine": "~3.3.12",
-    "@types/jasminewd2": "~2.0.6",
+    "@types/jasminewd2": "~2.0.10",
     "@types/node": "~11.13.5",
     "chokidar": "^2.1.6",
     "clean-webpack-plugin": "^2.0.2",
