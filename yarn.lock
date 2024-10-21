@@ -487,12 +487,13 @@
     semver "5.6.0"
     semver-intersect "1.4.0"
 
-"@types/chrome@~0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.85.tgz#f5db3500c92259b30abfb8e75e7ddf96b4075504"
-  integrity sha512-V8w4/Nbz7xh8wDdeV6GAQLn9AdaTF8+ugXGG9O5D+kSEZPOLJLcDqNRGleklIsZeqFZ2zVs9B4hqiiMPqv/QOA==
+"@types/chrome@~0.0.279":
+  version "0.0.279"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.279.tgz#18d902ba8bb2c23bc003484322901c6873ccfc64"
+  integrity sha512-wl0IxQ2OQiMazPZM5LimHQ7Jwd72/O8UvvzyptplXT2S4eUqXH5C0n8S+v8PtKhyX89p0igCPpNy3Bwksyk57g==
   dependencies:
     "@types/filesystem" "*"
+    "@types/har-format" "*"
 
 "@types/filesystem@*":
   version "0.0.29"
@@ -505,6 +506,11 @@
   version "0.0.28"
   resolved "https://registry.yarnpkg.com/@types/filewriter/-/filewriter-0.0.28.tgz#c054e8af4d9dd75db4e63abc76f885168714d4b3"
   integrity sha1-wFTor02d11205jq8dviFFocU1LM=
+
+"@types/har-format@*":
+  version "1.2.16"
+  resolved "https://registry.yarnpkg.com/@types/har-format/-/har-format-1.2.16.tgz#b71ede8681400cc08b3685f061c31e416cf94944"
+  integrity sha512-fluxdy7ryD3MV6h8pTfTYpy/xQzCFC7m89nOH9y94cNqJ1mDIDPut7MnRHI3F6qRmh/cT2fUjG1MLdCNb4hE9A==
 
 "@types/jasmine@*":
   version "2.8.9"
